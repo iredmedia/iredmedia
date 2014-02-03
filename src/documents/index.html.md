@@ -3,6 +3,6 @@ layout: 'default'
 title: 'iRed Media'
 ---
 
-## Let's build something beautiful
+## What are you waiting for?
 
-Let's [start](#!/start) something
+Let's [build](#!/build) something [beautiful](#!/beautiful)

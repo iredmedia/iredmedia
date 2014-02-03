@@ -5,8 +5,9 @@
 
 // Define variables
 $margins: 100px;
-$blackbacker: rgba(0, 0, 0, 0.5);
-$whitebacker: rgba(255, 255, 255, 0.75);
+$brand: #D00;
+$darkbg: rgba(0, 0, 0, 0.25);
+$lightbg: rgba(255, 255, 255, 0.25);
 
 /*
 font-family: 'Alegreya Sans SC', sans-serif;
@@ -19,23 +20,24 @@ font-family: 'Carme', sans-serif;
 
 body {
 	@include stretch();
+
 	-webkit-font-smoothing: antialiased;
 	background: #fff;
 	background-image: url('../field.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	font-family: 'Carme', sans-serif;
-	color: #333;
+	color: #000;
 	overflow: hidden;
 }
 
-h1 {
+h1, footer {
 	color: #fff;
 	font-family: 'Montserrat Alternates', sans-serif;
 }
 
 p {
-	font-size: 38px;
+	font-size: 200%;
 	line-height: 40px;
 	margin-top: 0;
 }
@@ -43,7 +45,8 @@ p {
 a {
 	color: #fff;
 	text-decoration: none;
-	text-shadow: 0 1px 0 #000
+	text-shadow: 0 1px 1px #000;
+	letter-spacing: 2px;
 }
 
 div {
@@ -51,20 +54,22 @@ div {
 }
 
 header {
-	background: #D00;
-	float: right;
+	background: $brand;
+	position: absolute;
+	right: 0;
 	padding: 0px 20px;
 	text-align: center;
 }
 
 article {
 	@include centerY();
-	color: #333;
+
+	color: #000;
 	margin-left: 25%;
 	margin: 0 auto;
 	padding: 25px 50px;
 	text-align: center;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+	text-shadow: $lightbg;
 	width: 50%;
 	border-radius: 5px;
 }
@@ -75,37 +80,20 @@ article {
 }
 
 footer {
-	background: $whitebacker;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	padding: 0 30px;
-	display: none;
-}
-
-footer {
-	bottom: 0;
 	position: absolute;
+	bottom: 0;
 	width: 100%;
-	display: none;
+	text-align: center;
+	text-transform: capitalize;
+	background: $darkbg;
+	box-shadow: 0 -1px 0px $lightbg;
+	ul {
+		list-style: none;
+		padding-left: 0;
 
-	&::after {
-		content: ' ';
-		clear: both;
-		display: block;
-	}
-
-	div {
-		width: 31.333333%;
-		float: left;
-		padding: 20px;
-		background: rgba(0,0,0,0.5);
-		margin: 1%;
-		box-shadow: 0 0px 1px 0px #fff;
-		border-radius: 3px;
-
-		h2 {
-			margin-top: 0;
+		li {
+			display: inline-block;
+			margin: auto 3%;
 		}
 	}
 }
