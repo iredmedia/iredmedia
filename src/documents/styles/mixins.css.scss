@@ -1,0 +1,22 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin stretch($x: 0, $y: 0) {
+	position: absolute;
+	top: $y; 
+	bottom: $y;
+	right: $x; 
+	left: $x; 
+	margin: auto;
+}
+
+@mixin centerY() {
+	-webkit-transform: translateY(-50%);
+	position: relative;
+	top: 50%;
+}

@@ -1,11 +1,8 @@
 ---
 layout: 'default'
-title: 'What now?'
+title: 'iRed Media'
 ---
 
-## Not sure what to do now? Here's some useful links:
+## A snappy title for your article
 
-- [DocPad Wiki](https://github.com/bevry/docpad/wiki)
-- [Getting Started Guide](https://github.com/bevry/docpad/wiki/Getting-Started)
-- [Beginner Guide](https://github.com/bevry/docpad/wiki/Beginner-Guide)
-- [IRC Chat Room](irc://irc.freenode.net/docpad)
+Some text some more text, and a lot lot more text. Some text some more text, and a lot lot more text. Some text some more text, and a lot lot more text. Some text some more text, and a lot lot more text. 

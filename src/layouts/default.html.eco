@@ -27,13 +27,17 @@
 	    <!--[if lt IE 7]>
 	        <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
 	    <![endif]-->
-
-		<header></header>
-		<article>
-			<%- @content %>
-		</article>
-		<footer></footer>
-
+	    <div id="content">
+			<header>
+				<h1>iRed Media</h1>
+			</header>
+			<article>
+				<%- @content %>
+			</article>
+			<footer>
+				<p>Search</p>
+			</footer>
+		</div>
 		<!-- DocPad Scripts + Our Own -->
 		<%- @getBlock('scripts').add(@getGruntedScripts()).toHTML() %>
 	</body>

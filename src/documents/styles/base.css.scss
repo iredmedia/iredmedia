@@ -1,0 +1,102 @@
+// Use mixins
+@import 'mixins.css.scss';
+// Import fonts
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400,700|Fauna+One|Duru+Sans|Montserrat+Alternates|Hammersmith+One|Carme);
+
+// Define variables
+$margins: 100px;
+$blackbacker: rgba(0, 0, 0, 0.5);
+$whitebacker: rgba(255, 255, 255, 0.75);
+
+/*
+font-family: 'Alegreya Sans SC', sans-serif;
+font-family: 'Fauna One', serif;
+font-family: 'Duru Sans', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Hammersmith One', sans-serif;
+font-family: 'Carme', sans-serif;
+*/
+
+body {
+	@include stretch();
+	-webkit-font-smoothing: antialiased;
+	background: #fff;
+	background-image: url('../field.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Carme', sans-serif;
+	color: #333;
+	overflow: hidden;
+}
+
+h1 {
+	color: #fff;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+p {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+header {
+	background: #D00;
+	float: right;
+	padding: 0px 20px;
+	text-align: center;
+}
+
+article {
+	@include centerY();
+	background: $whitebacker;
+	color: #333;
+	margin-left: 25%;
+	margin: 0 auto;
+	padding: 25px 50px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+	width: 50%;
+	border-radius: 5px;
+}
+
+#content {
+	height: 100%;
+	overflow: scroll;
+}
+
+footer {
+	background: $whitebacker;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 0 30px;
+}
+
+footer {
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+
+	&::after {
+		content: ' ';
+		clear: both;
+		display: block;
+	}
+
+	div {
+		width: 31.333333%;
+		float: left;
+		padding: 20px;
+		background: rgba(0,0,0,0.5);
+		margin: 1%;
+		box-shadow: 0 0px 1px 0px #fff;
+		border-radius: 3px;
+
+		h2 {
+			margin-top: 0;
+		}
+	}
+}
