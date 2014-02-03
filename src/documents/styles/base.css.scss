@@ -1,5 +1,6 @@
 // Use mixins
 @import 'mixins.css.scss';
+
 // Import fonts
 @import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400,700|Fauna+One|Duru+Sans|Montserrat+Alternates|Hammersmith+One|Carme);
 
@@ -9,14 +10,20 @@ $brand: #D00;
 $darkbg: rgba(0, 0, 0, 0.25);
 $lightbg: rgba(255, 255, 255, 0.25);
 
-/*
-font-family: 'Alegreya Sans SC', sans-serif;
-font-family: 'Fauna One', serif;
-font-family: 'Duru Sans', sans-serif;
-font-family: 'Montserrat Alternates', sans-serif;
-font-family: 'Hammersmith One', sans-serif;
-font-family: 'Carme', sans-serif;
-*/
+/* Available fonts
+ * font-family: 'Alegreya Sans SC', sans-serif;
+ * font-family: 'Fauna One', serif;
+ * font-family: 'Duru Sans', sans-serif;
+ * font-family: 'Montserrat Alternates', sans-serif;
+ * font-family: 'Hammersmith One', sans-serif;
+ * font-family: 'Carme', sans-serif;
+ */
+
+/* @todo
+ * Fix responsiveness
+ * Fix large content
+ * Background credit: http://wallpaperswide.com/golden_field_sunset-wallpapers.html
+ */
 
 body {
 	@include stretch();
