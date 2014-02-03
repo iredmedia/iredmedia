@@ -35,8 +35,15 @@ h1 {
 }
 
 p {
-	font-size: 18px;
-	line-height: 30px;
+	font-size: 38px;
+	line-height: 40px;
+	margin-top: 0;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #000
 }
 
 div {
@@ -52,11 +59,11 @@ header {
 
 article {
 	@include centerY();
-	background: $whitebacker;
 	color: #333;
 	margin-left: 25%;
 	margin: 0 auto;
 	padding: 25px 50px;
+	text-align: center;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
 	width: 50%;
 	border-radius: 5px;
@@ -73,12 +80,14 @@ footer {
 	bottom: 0;
 	width: 100%;
 	padding: 0 30px;
+	display: none;
 }
 
 footer {
 	bottom: 0;
 	position: absolute;
 	width: 100%;
+	display: none;
 
 	&::after {
 		content: ' ';

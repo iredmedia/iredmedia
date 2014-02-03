@@ -3,6 +3,6 @@ layout: 'default'
 title: 'iRed Media'
 ---
 
-## A snappy title for your article
+## Let's build something beautiful
 
-Some text some more text, and a lot lot more text. Some text some more text, and a lot lot more text. Some text some more text, and a lot lot more text. Some text some more text, and a lot lot more text. 
+Let's [start](#!/start) something
