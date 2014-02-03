@@ -5,4 +5,4 @@ title: 'iRed Media'
 
 ## What are you waiting for?
 
-Let's [build](#!/build) something [beautiful](#!/beautiful)
+Let's [build](contact.html) something [beautiful](works.html)

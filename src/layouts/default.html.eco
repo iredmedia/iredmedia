@@ -38,13 +38,16 @@
 			<footer>
 				<ul>
 					<li>
-						<a href="#">home</a>
+						<a href="index.html">home</a>
 					</li>
 					<li>
-						<a href="#">about</a>
+						<a href="about.html">about</a>
 					</li>
 					<li>
-						<a href="#">contact</a>
+						<a href="contact.html">contact</a>
+					</li>
+					<li>
+						<a href="works.html">works</a>
 					</li>
 				</ul>
 			</footer>
